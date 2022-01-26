@@ -17,7 +17,7 @@ function App() {
       <div className="headArea">
         <h1 className="header">ROI Calculator UI using ReactJS</h1>
         <button className="submit" onClick={() => setShowCal(!showCal)}>
-          ROI calculator
+          Open ROI calculator
         </button>
         <div className="boxArea">
           <div className="boxHeader">
