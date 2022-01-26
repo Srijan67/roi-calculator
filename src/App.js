@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CalBox from "./components/CalBox";
+import "./components/CalBox.css";
+import "./App.css";
+import { useState } from "react";
 function App() {
+  const [showCal, setShowCal] = useState(true);
+  // const xyz = () => {
+  //   setShowCal(!showCal);
+  //   if (showCal) {
+  //     return <CalBox />;
+  //   } else {
+  //     return;
+  //   }
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="headArea">
+        <h1 className="header">ROI Calculator UI using ReactJS</h1>
+        <button className="submit" onClick={() => setShowCal(!showCal)}>
+          ROI calculator
+        </button>
+        <div className="boxArea">
+          <div className="boxHeader">
+            <h2>ROI Calculator</h2>
+            <button className="cancel" onClick={() => setShowCal(false)}>
+              X
+            </button>
+          </div>
+
+          {showCal === true ? <CalBox /> : <></>}
+        </div>
+      </div>
+    </>
   );
 }
 

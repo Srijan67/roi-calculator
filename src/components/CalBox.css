@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  font-family: "Krub", sans-serif;
+}
+.boxArea {
+  width: 40vw;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.boxAreaSec {
+  width: 40vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.boxCenter {
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  padding: 0.3rem;
+
+  background-color: white;
+  width: 95%;
+}
+
+.boxHeader {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cancel {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.valueUSD {
+  text-align: start;
+}
+.valueUSD button {
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  border: none;
+  background-color: transparent;
+  font-weight: bolder;
+}
+.unstyledSwitch {
+  position: relative;
+  width: 100%;
+  top: -5px;
+  height: 20px;
+  display: block;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.unstyledSwitch span,
+.AccordionList {
+  color: gray;
+}
+.inputUSD {
+  text-align: center;
+}
+.inputUSD input {
+  text-align: end;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  box-shadow: none;
+  filter: none;
+}
+.inputUSD span {
+  display: block;
+  text-align: end;
+  /* width: 93%; */
+  font-size: 0.8rem;
+  color: rgb(160, 160, 160);
+  letter-spacing: 1px;
+}
+.period_value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.period_value .period_select {
+  margin-top: 0.7rem;
+}
+.period_value .period_select span {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  background-color: transparent;
+  color: rgb(160, 160, 160);
+}
+.period_value .period_select input {
+  display: none;
+}
+.tier {
+  margin-bottom: 0.5rem;
+}
+.tier p {
+  color: rgb(160, 160, 160);
+}
+.period_value .period_select span:hover,
+.period_value .period_select span:focus,
+.period_value .period_select input:checked + span {
+  color: black;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 0, 0.4);
+  border: 1.5px solid rgb(216, 216, 0);
+}
+
+.APY {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-details {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+.accordion-details button {
+  border: none;
+  background-color: transparent;
+}
+.accordion-details button span {
+  position: relative;
+  top: 8px;
+}
+.hidden-apy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.apy-num {
+  color: goldenrod;
+}
+.AccordionList {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.AccordionList li {
+  margin-left: 1rem;
+}
